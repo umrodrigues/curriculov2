@@ -27,8 +27,8 @@ export const SkillsSection = () => {
         </div>
       </div>
       <div className="relative  w-full inset-0 h-[28rem] -rotate-[10deg] md:-rotate-[5deg] pt-32  flex  flex-col items-center justify-center ">
-        <ParallaxText baseVelocity={3} className= "top-24"/>
-        <ParallaxText baseVelocity={-3} className= "bottom-0 lg:-bottom-5" reverse/>
+        {/* <ParallaxText baseVelocity={3} className= "top-24"/>
+        <ParallaxText baseVelocity={-3} className= "bottom-0 lg:-bottom-5" reverse/> */}
       </div>
       <div className="custom-shape-divider-bottom-1678425506">
         <svg
