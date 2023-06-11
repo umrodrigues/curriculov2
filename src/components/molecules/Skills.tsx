@@ -175,7 +175,7 @@ export const navigation = [
 ];
 
 export const SkillsSection = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div className="w-full flex flex-col overflow-hidden">
@@ -187,10 +187,22 @@ export const SkillsSection = () => {
           </p>
         </div>
       </div>
+
       <div className="flex justify-center py-8">
-        <ul className="list-disc text-white">
+        <ul className="list-disc text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {navigation.map((item, index) => (
-            <li key={index} className="mb-2 text-primary-white flex items-center">
+            <li
+              key={index}
+              className={`mb-2 text-primary-white flex items-center`}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              style={{
+                transform: hoveredIndex === index ? "scale(1.2)" : "scale(1)",
+                transition: "transform 0.3s ease",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
               {item.icon && (
                 <div className="mr-2">
                   {React.createElement(item.icon, {
