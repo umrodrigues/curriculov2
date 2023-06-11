@@ -26,7 +26,7 @@ export const ContactSection = () => {
               onClick={() => {
                 setTimeout(() => {
                   router.push(
-                    "https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
+                    "https://api.whatsapp.com/send?phone=5551986552962"
                   );
                 }, 300)
               }}

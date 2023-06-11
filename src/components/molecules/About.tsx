@@ -77,19 +77,6 @@ export const About = () => {
                   <br />
                   Você tem um desafio novo para mim?
                 </p>
-
-                {/* <div className="flex justify-center  items-center pt-6 ">
-                  <Link
-                    href={cv}
-                    className="bg-primary-orange rounded-3xl w-full md:w-auto px-14 py-2 flex justify-center items-center custom-btn btn-12 hover:scale-110"
-                    target="_blank"
-                  >
-                    <BsFileEarmarkPdf className="inline mr-1 mb-1 text-xl text-white  " />
-                    <span className="text-white inline text-lg font-bold">
-                      Baixar curriculo
-                    </span>
-                  </Link>
-                </div> */}
               </div>
             </div>
           </div>

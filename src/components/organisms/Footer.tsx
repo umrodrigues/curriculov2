@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BsBehance, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import {  BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 
 export const navigation = {
   social: [
@@ -13,11 +13,6 @@ export const navigation = {
       href: "https://www.linkedin.com/in/lu%C3%A3-rodrigues-26ab53190/",
       icon: BsLinkedin,
     },
-    // {
-    //   name: "Behance",
-    //   href: "https://www.behance.net/flaviogabriel?tracking_source=search_projects_recommended%7CLanding%20page%20-%20pizzaria",
-    //   icon: BsBehance,
-    // },
     {
       name: "Whatsapp",
       href: "https://api.whatsapp.com/send?phone=5551986552962",

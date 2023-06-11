@@ -1,47 +1,84 @@
-import { ParallaxText } from "../atoms/ParallaxText";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaJava, FaDocker, FaSass } from "react-icons/fa";
+import { SiTypescript, SiMysql, SiSpring, SiSass, SiPython, SiCsharp, SiPhp, SiRuby } from "react-icons/si";
+import { useState } from "react";
+import React from "react";
+
+export const navigation = {
+  social: [
+    {
+      icon: FaHtml5,
+    },
+    {
+      icon: FaCss3Alt,
+    },
+    {
+      icon: FaJs,
+    },
+    {
+      icon: SiTypescript,
+    },
+    {
+      icon: FaReact,
+    },
+    {
+      icon: SiMysql,
+    },
+    {
+      icon: FaJava,
+    },
+    {
+      icon: SiSpring,
+    },
+    {
+      icon: FaDocker,
+    },
+    {
+      icon: FaSass,
+    },
+    {
+      icon: SiPython,
+    },
+    {
+      icon: SiCsharp,
+    },
+    {
+      icon: SiPhp,
+    },
+  ],
+};
 
 export const SkillsSection = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleIconHover = (index: number | React.SetStateAction<null>) => {
+    setHoveredIndex(index);
+  };
+
   return (
     <div className="glass w-full flex flex-col overflow-hidden">
       <div className="pb-10 w-full lg:pb-32 bg-neutral-900 flex gap-10 flex-col">
         <div className="text-center w-full">
-          <h2 className="text-lg font-semibold  text-primary-orange">Sobre</h2>
-          <p className=" text-2xl font-bold text-zinc-50 tracking-tight sm:text-4xl lg:text-5xl">
+          <h2 className="text-lg font-semibold text-white">Sobre</h2>
+          <p className="text-2xl font-bold text-white tracking-tight sm:text-4xl lg:text-5xl">
             Skills
           </p>
         </div>
       </div>
-      <div className="relative top-0 w-full">
-        <div className="custom-shape-divider-top-1678559770">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0   1200 120z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </div>
-      <div className="relative  w-full inset-0 h-[28rem] -rotate-[10deg] md:-rotate-[5deg] pt-32  flex  flex-col items-center justify-center ">
-        {/* <ParallaxText baseVelocity={3} className= "top-24"/>
-        <ParallaxText baseVelocity={-3} className= "bottom-0 lg:-bottom-5" reverse/> */}
-      </div>
-      <div className="custom-shape-divider-bottom-1678425506">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            className="shape-fill"
-          ></path>
-        </svg>
+      <div className="flex justify-center py-8">
+        {navigation.social.map((item, index) => {
+          const isHovered = hoveredIndex === index;
+          const iconColor = isHovered ? "text-primary-orange" : "text-white";
+          return (
+            <div
+              key={index}
+              className="mx-4"
+              onMouseEnter={() => handleIconHover(index)}
+              onMouseLeave={() => handleIconHover(null)}
+            >
+              {React.createElement(item.icon, { className: `text-4xl ${iconColor}` })}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
