@@ -8,7 +8,7 @@ import {
 } from "react-icons/bs";
 import { useState } from "react";
 import logoRenner from "../../assets/rennerlogo.png";
-import logoWorkana from "../../assets/workana.webp";
+import simploImage from "../../assets/simplo7img.jpg";
 import ImageABout from "../../assets/perfil.webp";
 import Link from "next/link";
 import { Section } from "../atoms/Section";
@@ -175,30 +175,52 @@ export const Experiencias = () => {
                     <div className="flex flex-col md:flex-row justify-center items-center text-base  ">
                       <Image
                         className="rounded-md"
-                        src={logoWorkana}
+                        src={simploImage}
                         alt={"logo workana"}
                         width={30}
                         height={30}
                         priority
                       />
-                      <h2 className="md:ml-2">Outra experiencia </h2>
+                      <h2 className="md:ml-2">Simplo7 | Dloja virtual </h2>
                     </div>
                   </div>
                   <div className="text-center flex items-center flex-col   bg-zinc-500 rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
                     <p>
-                    Descrição
+                    Analista de Infraestrutura e Desenvolvedor PHP
+                    <br />
+                    <br />
+                    Monitoria de servidores via Zabbix.
+                    <br />
+                    Configurações e manutenção de servidores e máquinas virtuais.
+                    <br />
+                    Instalação e otimização de recursos pertinentes à infraestrutura da empresa.
+                    <br />
+                    Manutenção de Código e Correção de bugs;
+                    <br />
+                    Modelagem e manutenção de Banco de Dados.
+                    <br />
+                    Analise de logs com Graylog.
+                    <br />
+                    Alterações visuais em lojas virtuais dos clientes com HTML, CSS E Js.
+                    <br />
+
+                    Auxiliar atendentes de Nível 1 sobre as duvidas referente a plataforma de ecommerce da empresa.
+                    <br />
+                    <br />
+
+                    Competências: JSON · XML · WAMP · Servidor Apache · PHP · Arquitetura MVC · Git · JavaScript · JQuery · CakePHP · API REST · MySQL
                     </p>
                     <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        20/04/2022
+                        05/06/2020
                       </span>
 
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
-                        20/05/2022
+                        15/07/2021
                       </span>
                     </div>
                     <div className="py-2.5">
