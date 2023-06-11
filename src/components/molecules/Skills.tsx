@@ -50,9 +50,6 @@ export const navigation = {
 export const SkillsSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const handleIconHover = (index: number | React.SetStateAction<null>) => {
-    setHoveredIndex(index);
-  };
 
   return (
     <div className="glass w-full flex flex-col overflow-hidden">
@@ -72,8 +69,6 @@ export const SkillsSection = () => {
             <div
               key={index}
               className="mx-4"
-              onMouseEnter={() => handleIconHover(index)}
-              onMouseLeave={() => handleIconHover(null)}
             >
               {React.createElement(item.icon, { className: `text-4xl ${iconColor}` })}
             </div>
