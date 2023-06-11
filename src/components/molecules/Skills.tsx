@@ -1,83 +1,123 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaJava, FaDocker, FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaJava, FaDocker, FaSass, FaDev,FaLaravel,FaNode, FaVuejs, FaCodeBranch,FaLinux, FaNetworkWired, FaMailBulk, FaJenkins } from "react-icons/fa";
 import { SiTypescript, SiMysql, SiSpring, SiSass, SiPython, SiCsharp, SiPhp, SiRuby } from "react-icons/si";
 import { useState } from "react";
 import React from "react";
 
+
+
 export const navigation = [
   {
     label: "Hooks customizados",
+    icon: FaCodeBranch,
   },
   {
     label: "Testes unitários com Jest",
+    icon: FaCodeBranch,
   },
   {
     label: "Documentação com storybook",
+    icon: FaCodeBranch,
   },
   {
     label: "Layout Responsivo",
+    icon: FaCodeBranch,
+
   },
   {
     label: "Sistemas Operacionais GNU/Linux",
+    icon: FaLinux,
   },
-  {
-    label: "Bancos de dados SQL, NOSQL( Mysql , PostgreSQL, Oracle, MongoDB)",
-  },
+
   {
     label: "Cake PHP",
+    icon: FaLinux,
   },
   {
     label: "Metodologias ágeis, Scrum, Kambam",
+    icon: FaLinux,
   },
   {
     label: "Conceitos de rede de computadores (TCP/IP, Switch, Roteador, Firewall, VPN)",
+    icon: FaLinux,
+  },
+  {
+    label: "Laravel",
+    icon: FaLaravel,
+
+  },
+  {
+    label: "Node.js",
+    icon: FaNode,
+
+  },
+  {
+    label: "Vue.js",
+    icon: FaVuejs,
+
   },
   {
     label: "Configuração de placas e rotas de rede",
+    icon: FaNetworkWired,
   },
   {
     label: "Servidor SSH",
+    icon: FaCodeBranch,
   },
   {
     label: "Servidor Web ( Apache e Nginx)",
+    icon: FaCodeBranch,
   },
   {
     label: "Arquiteturas de Hardware de computadores ( SCSI, RAID, HBA )",
+    icon: FaCodeBranch,
   },
   {
     label: "Servidor de e-mail ( Postfix / Qmail ou Sendmail )",
+    icon: FaMailBulk,
   },
   {
     label: "Instalação de pacotes ( .rpm / .deb )",
+    icon: FaCodeBranch,
   },
   {
     label: "Shell Script",
+    icon: FaCodeBranch,
   },
   {
     label: "Editores de texto ( vi / vim / emacs / mcedit )",
+    icon: FaCodeBranch,
   },
   {
     label: "Agendamento de tarefas ( cron / at )",
+    icon: FaCodeBranch,
   },
   {
     label: "Kubernets",
+    icon: FaCodeBranch,
   },
   {
     label: "Jenkins",
+    icon: FaJenkins,
   },
   {
     label: "Inglês Avançado",
+    icon: FaCodeBranch,
   },
   {
     label: "Postmann e Insomnia",
+    icon: FaCodeBranch,
   },
   {
     label: "RabbitMq",
+    icon: FaCodeBranch,
   },
   {
     label: "Graphana",
+    icon: FaCodeBranch,
   },
   {
     label: "Swagger",
+    icon: FaCodeBranch,
   },
 
   {
@@ -150,24 +190,18 @@ export const SkillsSection = () => {
       <div className="flex justify-center py-8">
         <ul className="list-disc text-white">
           {navigation.map((item, index) => (
-            <li key={index} className="mb-2 text-primary-orange">
+            <li key={index} className="mb-2 text-primary-white flex items-center">
+              {item.icon && (
+                <div className="mr-2">
+                  {React.createElement(item.icon, {
+                    className: "text-4xl text-primary-white",
+                  })}
+                </div>
+              )}
               {item.label}
             </li>
           ))}
         </ul>
-      </div>
-      <div className="flex justify-center py-8 ">
-        {navigation.map((item, index) => {
-          const isHovered = hoveredIndex === index;
-          const iconColor = isHovered ? "text-primary-orange" : "text-primary-orange";
-          return (
-            <div key={index} className="mx-4 my-2">
-              {item.icon && React.createElement(item.icon, {
-                className: `text-4xl ${iconColor}`,
-              })}
-            </div>
-          );
-        })}
       </div>
     </div>
   );
