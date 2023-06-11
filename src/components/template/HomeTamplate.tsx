@@ -11,7 +11,7 @@ export const HomePageTemplate = () => {
   return (
     <>
       <Head>
-        <title>Portifolio </title>
+        <title>Curriculo </title>
         <link rel="shortcut icon" sizes="32/32" href="/favicon/favicon.ico" />
       </Head>
 

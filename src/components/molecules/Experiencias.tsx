@@ -7,7 +7,7 @@ import {
   BsJournalBookmarkFill,
 } from "react-icons/bs";
 import { useState } from "react";
-import logoMaisVoip from "../../assets/mainvoip.webp";
+import logoRenner from "../../assets/rennerlogo.png";
 import logoWorkana from "../../assets/workana.webp";
 import ImageABout from "../../assets/perfil.webp";
 import Link from "next/link";
@@ -43,27 +43,33 @@ export const Experiencias = () => {
                     <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
                       <Image
                         className="rounded-md"
-                        src={logoMaisVoip}
-                        alt={"logo mais voip"}
+                        src={logoRenner}
+                        alt={"logo Renner"}
                         width={40}
                         height={40}
                         priority
                       />
                       <h2 className="text-center md:text-clip md:ml-2">
                         {" "}
-                        Nome da empresa
+                        Datum | Renner S.A.
                       </h2>
                     </div>
                   </div>
                   <div className="text-center flex items-center flex-col  bg-zinc-500 rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
                     <p>
-                    Descrição cargo
+                    Desenvolvedor Fullstack Java | React | Node | Typescript
+                    <br />
+                    Criação de hooks customizados
+                    <br />
+                    Métodos ageis
+                    <br />
+                    Testes unitários em Jest e documentação via Storybook
                       </p>
                     <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        20/06/2022
+                        20/07/2021
                       </span>
 
                       <span className="flex justify-center items-center">
@@ -75,7 +81,74 @@ export const Experiencias = () => {
                       </span>
                     </div>
                     <div className="py-2.5">
-                      <Link href="https://www.linkedin.com/company/maisvoip/mycompany/"
+                      <Link href="https://www.linkedin.com/company/datumti/mycompany/"
+                          target="_blank"
+                          className="bg-[#012d74] px-16 rounded-md  md:w-auto md:px-10 py-1 flex justify-between items-center hover:scale-105"
+                        >
+                          <span className="text-gray-100 text-base font-bold">
+                            Saiba mais
+                          </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="flex justify-center mx-2 h-full "
+              >
+                <div
+                  className="w-[2px] h-32 bg-zinc-300 bg-opacity-90 "
+                ></div>
+              </div>
+
+              <div
+                className="flex px-4 sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
+              >
+                <div className="shadow-2xl md:flex-col rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
+                  <div className=" md:px-4   text-gray-100 bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-3  justify-center items-center ">
+                    <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
+                      <Image
+                        className="rounded-md"
+                        src={logoRenner}
+                        alt={"logo Renner"}
+                        width={40}
+                        height={40}
+                        priority
+                      />
+                      <h2 className="text-center md:text-clip md:ml-2">
+                        {" "}
+                        Datum | Renner S.A.
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="text-center flex items-center flex-col  bg-zinc-500 rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
+                    <p>
+                    Desenvolvedor Fullstack Java | React | Node | Typescript
+                    <br />
+                    Criação de hooks customizados
+                    <br />
+                    Métodos ageis
+                    <br />
+                    Testes unitários em Jest e documentação via Storybook
+                      </p>
+                    <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
+                      <span className="flex justify-center items-center">
+                        <h3 className="font-semibold">De:</h3>
+                        <BsCalendar className="inline mx-1" />
+                        20/07/2021
+                      </span>
+
+                      <span className="flex justify-center items-center">
+                        <h3 className="font-semibold">Ate:</h3>
+                        <BsCalendar className="inline mx-1" />
+                        <h3 className="font-semibold text-primary-orange">
+                          Atualmente!
+                        </h3>
+                      </span>
+                    </div>
+                    <div className="py-2.5">
+                      <Link href="https://www.linkedin.com/company/datumti/mycompany/"
                           target="_blank"
                           className="bg-[#012d74] px-16 rounded-md  md:w-auto md:px-10 py-1 flex justify-between items-center hover:scale-105"
                         >
