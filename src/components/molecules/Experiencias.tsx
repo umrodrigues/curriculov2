@@ -224,7 +224,7 @@ export const Experiencias = () => {
                       </span>
                     </div>
                     <div className="py-2.5">
-                      <Link href="https://www.linkedin.com/company/maisvoip/mycompany/"
+                      <Link href="https://www.linkedin.com/company/simplo-7/"
                           target="_blank"
                           className="bg-[#4d2d9f] rounded-md px-16 py-1 flex justify-between items-center  hover:scale-105 transition-all duration-200"
                         >

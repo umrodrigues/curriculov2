@@ -71,6 +71,7 @@ export const About = () => {
                   <br />
                   Iniciei minha carreira na área tech como analista de suporte, sempre tive como ponto forte a curiosidade.
                   Desde que escrevi a minha primeira linha de código foi paixão a primeira vista.
+                  <br />
                   Atuo como desenvolvedor desde 2021, sempre buscando conhecimento e aprimorando minhas skills.
                   <br />
                   <br />
