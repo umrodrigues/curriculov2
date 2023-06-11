@@ -16,9 +16,9 @@ export const ContactSection = () => {
             </h3>
 
             <p className="text-justify px-2 md:text-left text-base leading-relaxed max-w-md">
-              Estou disponível para ajudá-lo a realizar seus sonhos e metas. Meu atendimento está disponível todos os dias de segunda a segunda, das
-              8h às 20h. Se você precisa de um site, fale comigo pelo WhatsApp e
-              vamos tornar isso possível juntos!
+              Gostou do que viu? 
+              <br />
+              Entre em contato!
             </p>
           </div>
           <div className="w-full flex justify-center items-center pt-24 pb-4">
