@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Section } from "../atoms/Section";
 import { SiCss3, SiNodedotjs, SiJavascript } from "react-icons/si";
 
-const cv = "/Currículo_Flavio_Gabriel.pdf";
 
 export const About = () => {
   return (
