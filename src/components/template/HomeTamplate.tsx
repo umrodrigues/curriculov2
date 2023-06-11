@@ -18,7 +18,7 @@ export const HomePageTemplate = () => {
       <div className="fixed h-screen w-screen  left-0 right-0 top-0 bottom-0 -z-10 ">
         <div className="w-screen h-full">
           <video
-            src={require("/public/bg.mp4")}
+            src={require("/public/bigbang.mp4")}
             autoPlay
             muted
             loop
