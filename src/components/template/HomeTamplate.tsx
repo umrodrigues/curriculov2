@@ -46,7 +46,7 @@ export const HomePageTemplate = () => {
         <About />
         <SkillsSection/>
         <Experiencias />
-        {/* <ProjetoSection /> */}
+        <ProjetoSection />
         <ContactSection />
       </main>
       <Footer />

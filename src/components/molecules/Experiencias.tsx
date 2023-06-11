@@ -69,7 +69,7 @@ export const Experiencias = () => {
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        20/07/2021
+                        31/12/2022
                       </span>
 
                       <span className="flex justify-center items-center">
@@ -124,13 +124,11 @@ export const Experiencias = () => {
                   </div>
                   <div className="text-center flex items-center flex-col  bg-zinc-500 rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
                     <p>
-                    Desenvolvedor Fullstack Java | React | Node | Typescript
+                    Desenvolvedor Java | Spring Boot | Docker | Graphana
                     <br />
-                    Criação de hooks customizados
+                    Analise de problemas e solução utilizando Spring.
                     <br />
                     Métodos ageis
-                    <br />
-                    Testes unitários em Jest e documentação via Storybook
                       </p>
                     <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
                       <span className="flex justify-center items-center">
@@ -143,7 +141,7 @@ export const Experiencias = () => {
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
                         <h3 className="font-semibold text-primary-orange">
-                          Atualmente!
+                          31/12/2022
                         </h3>
                       </span>
                     </div>
