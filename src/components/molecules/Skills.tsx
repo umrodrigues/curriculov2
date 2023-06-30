@@ -9,173 +9,249 @@ export const navigation = [
   {
     label: "Hooks customizados",
     icon: FaCodeBranch,
+    level: 3,
   },
   {
     label: "Testes unitários com Jest",
     icon: FaCodeBranch,
+    level: 3,
+
   },
   {
     label: "Documentação com storybook",
     icon: FaCodeBranch,
+    level: 3,
   },
   {
     label: "Layout Responsivo",
     icon: FaCodeBranch,
+    level: 3,
 
   },
   {
     label: "Sistemas Operacionais GNU/Linux",
     icon: FaLinux,
+    level: 2,
+
   },
 
   {
     label: "Cake PHP",
     icon: FaLinux,
+    level: 1,
+
   },
   {
     label: "Metodologias ágeis, Scrum, Kambam",
     icon: FaLinux,
+    level: 3,
+
   },
   {
     label: "Conceitos de rede de computadores (TCP/IP, Switch, Roteador, Firewall, VPN)",
     icon: FaLinux,
+    level: 2,
+
   },
   {
     label: "Laravel",
     icon: FaLaravel,
+    level: 2,
+
 
   },
   {
     label: "Node.js",
     icon: FaNode,
+    level: 3,
+
 
   },
   {
     label: "Vue.js",
     icon: FaVuejs,
+    level: 3,
+
 
   },
   {
     label: "Configuração de placas e rotas de rede",
     icon: FaNetworkWired,
+    level: 2,
+
   },
   {
     label: "Servidor SSH",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Servidor Web ( Apache e Nginx)",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Arquiteturas de Hardware de computadores ( SCSI, RAID, HBA )",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Servidor de e-mail ( Postfix / Qmail ou Sendmail )",
     icon: FaMailBulk,
+    level: 2,
+
   },
   {
     label: "Instalação de pacotes ( .rpm / .deb )",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Shell Script",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Editores de texto ( vi / vim / emacs / mcedit )",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Agendamento de tarefas ( cron / at )",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Kubernets",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Jenkins",
     icon: FaJenkins,
+    level: 3,
+
   },
   {
-    label: "Inglês Avançado",
+    label: "Inglês",
     icon: FaCodeBranch,
+    level: 3,
+
   },
   {
     label: "Postmann e Insomnia",
     icon: FaCodeBranch,
+    level: 3,
+
   },
   {
     label: "RabbitMq",
     icon: FaCodeBranch,
+    level: 3,
+
   },
   {
     label: "Graphana",
     icon: FaCodeBranch,
+    level: 2,
+
   },
   {
     label: "Swagger",
     icon: FaCodeBranch,
+    level: 3,
+
   },
 
   {
     label: "HTML5",
     icon: FaHtml5,
+    level: 3,
+
   },
   {
     label: "CSS3",
     icon: FaCss3Alt,
+    level: 3,
+
   },
   {
     label: "JavaScript",
     icon: FaJs,
+    level: 3,
+
   },
   {
     label: "TypeScript",
     icon: SiTypescript,
+    level: 3,
+
   },
   {
     label: "React",
     icon: FaReact,
+    level: 3,
+
   },
   {
     label: "MySQL",
     icon: SiMysql,
+    level: 3,
+
   },
   {
     label: "Java",
     icon: FaJava,
+    level: 3,
+
   },
   {
     label: "Spring",
     icon: SiSpring,
+    level: 3,
+
   },
   {
     label: "Docker",
     icon: FaDocker,
+    level: 3,
+
   },
   {
     label: "Sass",
     icon: FaSass,
+    level: 3,
+
   },
   {
     label: "Python",
     icon: SiPython,
+    level: 2,
+
   },
   {
     label: "C#",
     icon: SiCsharp,
+    level: 2,
+
   },
   {
     label: "PHP",
     icon: SiPhp,
+    level: 2,
+
   },
 ];
 
 export const SkillsSection = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <div className="w-full flex flex-col overflow-hidden">
@@ -189,16 +265,13 @@ export const SkillsSection = () => {
       </div>
 
       <div className="flex justify-center py-8">
-        <ul className="list-disc text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+        <ul className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {navigation.map((item, index) => (
             <li
               key={index}
               className={`mb-2 text-primary-white flex items-center`}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
               style={{
-                transform: hoveredIndex === index ? "scale(1.2)" : "scale(1)",
-                transition: "transform 0.3s ease",
+                transition: "transform 0.2s ease",
                 display: "flex",
                 alignItems: "center",
               }}
@@ -210,7 +283,17 @@ export const SkillsSection = () => {
                   })}
                 </div>
               )}
-              {item.label}
+              <span className="mr-2">{item.label}</span>
+              <div className="flex space-x-1">
+                {Array.from({ length: item.level }).map((_, i) => (
+                  <div
+                    key={i}
+                    className={`w-4 h-4 rounded-lg ${
+                      i === 0 ? "bg-red-500" : i === 1 ? "bg-yellow-500" : "bg-green-500"
+                    }`}
+                  />
+                ))}
+              </div>
             </li>
           ))}
         </ul>
