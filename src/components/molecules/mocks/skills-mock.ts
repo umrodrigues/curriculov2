@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaJava, FaDocker, FaSass, FaDev,FaLaravel,FaNode, FaVuejs, FaCodeBranch,FaLinux, FaNetworkWired, FaMailBulk, FaJenkins } from "react-icons/fa";
-import { SiTypescript, SiMysql, SiSpring, SiSass, SiPython, SiCsharp, SiPhp, SiRuby } from "react-icons/si";
+import { SiTypescript, SiMysql, SiSpring, SiPython, SiCsharp, SiPhp, SiRuby } from "react-icons/si";
 
 export const skillsNavigation = [
     {

@@ -6,6 +6,7 @@ import { ContactSection } from "../molecules/Contact";
 import { Experiencias } from "../molecules/Experiencias";
 import { SkillsSection } from "../molecules/Skills";
 import { Footer } from "../organisms/Footer";
+import BackToTopButton from "../atoms/back-to-top";
 
 export const HomePageTemplate = () => {
   return (
@@ -48,6 +49,7 @@ export const HomePageTemplate = () => {
         <Experiencias />
         <ProjetoSection />
         <ContactSection />
+        <BackToTopButton />
       </main>
       <Footer />
     </>

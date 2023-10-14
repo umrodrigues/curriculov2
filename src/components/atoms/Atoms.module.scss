@@ -1,0 +1,14 @@
+.backToTopWrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 36px;
+    z-index: 9000;
+    margin-top: -70px;
+
+}
+.arrowUp{
+    background-color: #f3f4f6;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+}

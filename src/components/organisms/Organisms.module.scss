@@ -1,0 +1,11 @@
+.containerFooter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: 4px 4px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    font-size: 14px;
+    line-height: 14px;
+}

@@ -5,7 +5,7 @@ import arrowDown from "react-useanimations/lib/arrowDown";
 
 import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
 import AppContext from "../../services/context";
-import { navigation } from "@/organisms/Footer";
+import { FooterNavigation } from "../organisms/mocks/footer.mock";
 import Link from "next/link";
 
 export const Home = () => {
@@ -49,7 +49,7 @@ export const Home = () => {
             </div>
 
             <div className="flex justify-center md:justify-start gap-10 items-center pt-5 md:pt-10">
-              {navigation.social.map((item, index) => (
+              {FooterNavigation.social.map((item, index) => (
                 <div key={index}>
                   <div className="bg-gray-900 bg-opacity-20   hover:scale-110 rounded-full group shadow-xlflex justify-center flex-col max-w-xs text-gray-100 border border-gray-500 border-opacity-30  hover:border-primary-orange hover:shadow-primary-orange transition-all duration-300 cursor-pointer glass p-3">
                     <Link
