@@ -1,7 +1,7 @@
 import { Section } from "@/atoms/Section";
 
-import Banner4 from "../../assets/imgPortifolio/banner4.webp";
-import Banner5 from "../../assets/imgPortifolio/banner5.webp";
+import Banner4 from "../../assets/imgPortifolio/construcao.avif";
+import Banner5 from "../../assets/imgPortifolio/whats.png";
 import Banner7 from "../../assets/imgPortifolio/banner7.webp";
 import { BsBehance, BsEyeFill, BsGithub } from "react-icons/bs";
 import Image from "next/image";
@@ -11,42 +11,42 @@ import { SiJavascript, SiSass } from "react-icons/si";
 
 const ArrayPortifolio1a3 = [
   {
-    title: "PROJETO 1",
+    title: "Gerador de links whatsapp",
     description:
-      "DESCRIÇÃO RAPIDA",
+      "Recurso para gerar links de WhatsApp, direcionar a conversa e enviar mensagens.",
     img: Banner5,
     projectSkill1: "HTML",
     projectSkill2: "CSS",
     projectSkill3: "JavaScript",
     link: "",
-    git: "https://github.com/GabDevjs/LandingPage-Pizzaria",
-    linkLocal: "/projects/pizzaria/index.html",
+    git: "https://github.com/umrodrigues/gerar-link-whatsapp",
+    linkLocal: "https://umrodrigues.github.io/gerar-link-whatsapp/",
   },
 
   {
-    title: "PROJETO 2",
+    title: "Em desenvolvimento",
     description:
-    "DESCRIÇÃO RAPIDA",
+    "",
     img: Banner4,
     projectSkill1: "HTML",
     projectSkill2: "SASS",
     projectSkill3: "JavaScript",
 
     link: "",
-    git: "https://github.com/GabDevjs/Landing-page---PetShop-WebSite",
-    linkLocal: "/projects/pet/index.html",
+    git: "",
+    linkLocal: "",
   },
   {
-    title: "PROJETO 3",
+    title: "Em desenvolvimento",
     description:
-    "DESCRIÇÃO RAPIDA",
-    img: Banner7,
+    "",
+    img: Banner4,
     projectSkill1: "HTML",
     projectSkill2: "SASS",
     projectSkill3: "JavaScript",
     link: "",
-    git: "https://github.com/GabDevjs/LandingPage-TravelWebsite",
-    linkLocal: "/projects/travel/index.html",
+    git: "",
+    linkLocal: "  ",
   },
 ];
 
@@ -125,12 +125,6 @@ export const ProjetoSection = () => {
                         {item.description}
                       </p>
                       <div className="flex justify-around pt-3 mt-3 border-t border-zinc-800 pb-4 items-center w-full">
-                        <Link href={item.link}
-                            className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200"
-                            target="_blank"
-                          >
-                            <BsBehance size={25} />
-                        </Link>
                         <Link href={item.linkLocal}
                             className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-150  hover:text-gray-100 text-primary-orange transition-all duration-300"
                             target="_blank"
