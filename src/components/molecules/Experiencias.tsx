@@ -8,6 +8,7 @@ import {
 } from "react-icons/bs";
 import { useState } from "react";
 import logoRenner from "../../assets/rennerlogo.png";
+import velocelogo from "../../assets/velocelogo.png"
 import simploImage from "../../assets/simplo7img.jpg";
 import ImageABout from "../../assets/perfil.webp";
 import Link from "next/link";
@@ -34,6 +35,73 @@ export const Experiencias = () => {
               >
                 Um pouco sobre as minhas experiencias de trabalho.
               </p>
+              
+             
+              <div
+                className="flex px-4 sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
+              >
+                <div className="shadow-2xl md:flex-col rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
+                  <div className=" md:px-4   text-gray-100 bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-3  justify-center items-center ">
+                    <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
+                      <Image
+                        className="rounded-md"
+                        src={velocelogo}
+                        alt={"veloce logo"}
+                        width={40}
+                        height={40}
+                        priority
+                      />
+                      <h2 className="text-center md:text-clip md:ml-2">
+                        {" "}
+                        Veloce.tech
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="text-center flex items-center flex-col  bg-zinc-500 rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
+                    <p>
+                    Desenvolvedor Fullstack
+                    <br />
+                    Desenvolvimento de novas features e correções.
+                    <br />
+                    Utilização das linguagens: Java 8, PHP 5, Docker, Python, JavaScript, Symphony, Laravel, Oracle, Mysql.
+                      </p>
+                    <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
+                      <span className="flex justify-center items-center">
+                        <h3 className="font-semibold">De:</h3>
+                        <BsCalendar className="inline mx-1" />
+                        20/12/2024
+                      </span>
+
+                      <span className="flex justify-center items-center">
+                        <h3 className="font-semibold">Ate:</h3>
+                        <BsCalendar className="inline mx-1" />
+                        <h3 className="font-semibold text-primary-orange">
+                          Atualmente
+                        </h3>
+                      </span>
+                    </div>
+                    <div className="py-2.5">
+                      <Link href="https://www.linkedin.com/company/velocetechoficial/posts/?feedView=all"
+                          target="_blank"
+                          className="bg-[#012d74] px-16 rounded-md  md:w-auto md:px-10 py-1 flex justify-between items-center hover:scale-105"
+                        >
+                          <span className="text-gray-100 text-base font-bold">
+                            Saiba mais
+                          </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="flex justify-center mx-2 h-full "
+              >
+                <div
+                  className="w-[2px] h-32 bg-zinc-300 bg-opacity-90 "
+                ></div>
+              </div>
+
 
               <div
                 className="flex px-4 sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
@@ -59,11 +127,20 @@ export const Experiencias = () => {
                     <p>
                     Desenvolvedor Fullstack Java | React | Node | Typescript
                     <br />
-                    Criação de hooks customizados
+                    Desenvolvimento do novo e-commerce das Lojas Renner.
+                    <br />
+                    Criação de hooks customizados para otimização do código.
                     <br />
                     Métodos ageis
                     <br />
-                    Testes unitários em Jest e documentação via Storybook
+                    Uso de TypeScript para garantir segurança e clareza no desenvolvimento.
+                    <br />
+                    Implementação de testes unitários com Jest para garantir qualidade(coverage 85%);
+                    <br />  
+                   Documentação de componentes com Storybook.
+                   <br /> 
+                    Trabalho em metodologias ágeis, com refinamentos constantes e entregas frequentes.
+
                       </p>
                     <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
                       <span className="flex justify-center items-center">
@@ -76,7 +153,7 @@ export const Experiencias = () => {
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
                         <h3 className="font-semibold text-primary-orange">
-                          Atualmente!
+                          12/09/2024
                         </h3>
                       </span>
                     </div>
@@ -126,9 +203,15 @@ export const Experiencias = () => {
                     <p>
                     Desenvolvedor Java | Spring Boot | Docker | Graphana
                     <br />
-                    Analise de problemas e solução utilizando Spring.
+                    Atendimento e resolução de chamados de Nível 3 com ServiceNow.
                     <br />
-                    Métodos ageis
+                    Desenvolvimento de soluções utilizando Java e Spring Boot.
+                    <br />
+                    Monitoramento de logs e sistemas com Graylog e Grafana.
+                    <br />
+                    Implementação de filas de mensagens com RabbitMQ.
+                    <br />
+                    Testes e documentação de APIs com Postman e Swagger.
                       </p>
                     <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
                       <span className="flex justify-center items-center">

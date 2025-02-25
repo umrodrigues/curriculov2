@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
-import Typed from "react-typed";
-import UseAnimations from "react-useanimations";
+import dynamic from "next/dynamic";
+const Typed = dynamic(() => import("react-typed"), { ssr: false });
+const UseAnimations = dynamic(() => import("react-useanimations"), { ssr: false });
 import arrowDown from "react-useanimations/lib/arrowDown";
 
 import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";

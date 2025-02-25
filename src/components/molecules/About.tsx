@@ -66,7 +66,7 @@ export const About = () => {
                   <br />
                   Olá!
                   <br />
-                  Me chamo Luã Rodrigues, tenho 26 anos e atualmente resido em Canoas - RS.
+                  Me chamo Luã Rodrigues, tenho 28 anos e atualmente resido em Canoas - RS.
                   <br />
                   <br />
                   Iniciei minha carreira na área tech como analista de suporte, sempre tive como ponto forte a curiosidade.
