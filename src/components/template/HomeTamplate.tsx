@@ -16,17 +16,6 @@ export const HomePageTemplate = () => {
         <link rel="shortcut icon" sizes="32/32" href="/favicon/favicon.ico" />
       </Head>
 
-      <div className="fixed h-screen w-screen  left-0 right-0 top-0 bottom-0 -z-10 ">
-        <div className="w-screen h-full">
-          <video
-            src={require("/public/galaxy2.mp4")}
-            autoPlay
-            muted
-            loop
-            className="w-full h-screen object-cover"
-          />
-        </div>
-      </div>
       <Home />
       <div className="">
         <div className="custom-shape-divider-bottom-1678425506">

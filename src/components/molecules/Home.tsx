@@ -41,7 +41,22 @@ export const Home = () => {
 
   return (
     <header className="w-full h-[90vh] lg:h-screen relative flex justify-center items-center overflow-hidden">
-      <div className="absolute bottom-10 z-10">
+      {/* Fundo de Galáxia */}
+      <div className="absolute inset-0 galaxy-background">
+        <div className="nebula"></div>
+        <div className="particles">
+          <div className="particle"></div>
+          <div className="particle"></div>
+          <div className="particle"></div>
+          <div className="particle"></div>
+          <div className="particle"></div>
+          <div className="particle"></div>
+          <div className="particle"></div>
+          <div className="particle"></div>
+          <div className="particle"></div>
+        </div>
+      </div>
+      <div className="absolute bottom-10 z-20">
         <UseAnimations
           animation={arrowDown}
           size={44}
@@ -50,13 +65,13 @@ export const Home = () => {
         />
       </div>
       
-      <div className="max-w-6xl w-full pt-20 md:pt-0 px-4 lg:px-6 relative">
+      <div className="max-w-6xl w-full pt-20 md:pt-0 px-4 lg:px-6 relative z-10">
         <div className="flex justify-center items-center">
           <div className="flex flex-col justify-center items-center text-center">
-            <div className={`text-2xl lg:text-5xl gap-2 text-gray-100 font-semibold leading-snug flex flex-col transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <p className="text-xl lg:text-2xl mb-2">{mesagem}, me chamo</p>
+            <div className={`text-2xl lg:text-5xl gap-2 text-white font-semibold leading-snug flex flex-col transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <p className="text-xl lg:text-2xl mb-2 text-gray-200 drop-shadow-lg">{mesagem}, me chamo</p>
               <h1 className="text-4xl lg:text-7xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse drop-shadow-2xl">
                   Luã Rodrigues
                 </span>
               </h1>
@@ -100,11 +115,11 @@ export const Home = () => {
             </div>
 
             <div className={`mt-8 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="bg-zinc-800/50 backdrop-blur-sm rounded-xl p-6 border border-zinc-700/50 max-w-2xl">
-                <p className="text-gray-300 text-sm lg:text-base leading-relaxed mb-6 text-center">
-                  <span className="text-white font-semibold">Desenvolvedor Fullstack</span> com mais de 5 anos de experiência, 
-                  especializado em <span className="text-zinc-200">backend</span>, <span className="text-zinc-200">automação</span> e 
-                  <span className="text-zinc-200"> soluções inteligentes</span>. 
+              <div className="bg-black/30 backdrop-blur-md rounded-xl p-6 border border-cyan-500/30 max-w-2xl shadow-2xl shadow-cyan-500/20">
+                <p className="text-gray-200 text-sm lg:text-base leading-relaxed mb-6 text-center">
+                  <span className="text-cyan-400 font-semibold">Desenvolvedor Fullstack</span> com mais de 5 anos de experiência, 
+                  especializado em <span className="text-blue-400">backend</span>, <span className="text-purple-400">automação</span> e 
+                  <span className="text-pink-400"> soluções inteligentes</span>. 
                   Apaixonado por criar sistemas robustos e eficientes.
                 </p>
                 <div className="flex justify-center">
@@ -125,7 +140,7 @@ export const Home = () => {
                 animationIterationCount: 'infinite'
               }}
             >
-              <div className={`text-zinc-50 flex justify-center items-center rounded-full text-2xl xl:text-3xl xl:p-2.5 ${tech.color} bg-opacity-80 border-2 ${tech.border} backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300`}>
+              <div className={`text-white flex justify-center items-center rounded-full text-2xl xl:text-3xl xl:p-2.5 ${tech.color} bg-opacity-90 border-2 ${tech.border} backdrop-blur-xl shadow-lg hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300`}>
                 <tech.Icon className="inline" />
               </div>
             </div>

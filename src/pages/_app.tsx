@@ -79,7 +79,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <AnimatePresence mode="wait" initial={false}>
       <LazyMotion features={domAnimation}>
         <AppProvider>
-          <main className={`${poppins.variable} font-sans`}>
+          <main className={`${poppins.variable} font-sans bg-black text-white`}>
             <Component {...pageProps} />
             <LoadingOverlay />
           </main>
