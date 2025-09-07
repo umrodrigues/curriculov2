@@ -22,12 +22,12 @@ export const About = () => {
   }, []);
 
   const techIcons = [
-    { Icon: SiJavascript, color: "bg-[#EAD41C]", position: "left-0 sm:left-2 top-0 sm:top-2", delay: "0s" },
-    { Icon: SiCss3, color: "bg-primary-blue", position: "right-0 sm:right-2 bottom-16 sm:bottom-20", delay: "0.5s" },
-    { Icon: SiNodedotjs, color: "bg-[#279249]", position: "left-0 sm:left-2 bottom-8 sm:bottom-10", delay: "1s" },
-    { Icon: FaJava, color: "bg-[#f89820]", position: "right-0 sm:right-2 top-8 sm:top-10", delay: "1.5s" },
-    { Icon: SiPhp, color: "bg-[#777bb4]", position: "left-1/2 top-0 sm:top-2", delay: "2s" },
-    { Icon: SiPython, color: "bg-[#3776ab]", position: "right-1/3 sm:right-1/4 bottom-0 sm:bottom-2", delay: "2.5s" }
+    { Icon: SiJavascript, color: "bg-[#EAD41C]", position: "hidden sm:block left-2 top-2", delay: "0s" },
+    { Icon: SiCss3, color: "bg-primary-blue", position: "hidden lg:block right-2 bottom-20", delay: "0.5s" },
+    { Icon: SiNodedotjs, color: "bg-[#279249]", position: "hidden lg:block left-2 bottom-10", delay: "1s" },
+    { Icon: FaJava, color: "bg-[#f89820]", position: "hidden lg:block right-2 top-10", delay: "1.5s" },
+    { Icon: SiPhp, color: "bg-[#777bb4]", position: "hidden xl:block left-1/2 top-2", delay: "2s" },
+    { Icon: SiPython, color: "bg-[#3776ab]", position: "hidden xl:block right-1/4 bottom-2", delay: "2.5s" }
   ];
 
   return (
@@ -46,8 +46,8 @@ export const About = () => {
 
           {/* Foto de perfil com ícones flutuantes */}
           <div className="flex justify-center text-base gap-2 flex-col lg:col-span-2">
-            <div className="flex justify-center relative flex-col text-lg max-w-xs sm:max-w-sm px-3 sm:px-5 md:px-10">
-              <div className={`flex rounded-[15rem] sm:rounded-[20rem] border-4 sm:border-8 border-neutral-900 relative z-20 justify-center items-end ring-2 sm:ring-4 ring-primary-orange shadow-xl shadow-orange-800 drop-shadow-2xl transition-all duration-1000 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+            <div className="flex justify-center relative flex-col text-lg max-w-[200px] sm:max-w-xs lg:max-w-sm px-2 sm:px-3 lg:px-5 xl:px-10">
+              <div className={`flex rounded-[12rem] sm:rounded-[15rem] lg:rounded-[20rem] border-2 sm:border-4 lg:border-8 border-neutral-900 relative z-20 justify-center items-end ring-1 sm:ring-2 lg:ring-4 ring-primary-orange shadow-xl shadow-orange-800 drop-shadow-2xl transition-all duration-1000 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
                 <Image
                   className="rounded-[10rem] hover:scale-105 transition-transform duration-300"
                   src={ImageABout}
@@ -65,7 +65,7 @@ export const About = () => {
                       animationIterationCount: 'infinite'
                     }}
                   >
-                    <div className={`flex justify-center items-center rounded-full text-lg sm:text-xl lg:text-2xl p-1.5 sm:p-2 ${tech.color} bg-opacity-80 border-2 ${tech.color} backdrop-blur-xl hover:scale-125 transition-transform ease-in-out shadow-lg`}>
+                    <div className={`flex justify-center items-center rounded-full text-sm sm:text-lg lg:text-xl xl:text-2xl p-1 sm:p-1.5 lg:p-2 ${tech.color} bg-opacity-80 border-2 ${tech.color} backdrop-blur-xl hover:scale-125 transition-transform ease-in-out shadow-lg`}>
                       <tech.Icon className="inline text-white" />
                 </div>
                   </div>

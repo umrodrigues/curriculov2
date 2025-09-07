@@ -3,6 +3,7 @@ const withVideos = require('next-videos')
 
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
   images: {
     unoptimized: true,
     formats: ['image/webp'],
@@ -18,6 +19,9 @@ const nextConfig = {
     });
     return config;
   },
+  experimental: {
+    optimizePackageImports: ['react-icons']
+  }
 }
 
 module.exports = withVideos(nextConfig)
