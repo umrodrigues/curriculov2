@@ -33,7 +33,7 @@ export const About = () => {
   return (
     <div id="sobre" className="pt-8 sm:pt-10 px-3 sm:px-4 lg:px-6 bg-neutral-900">
       <Section>
-        <div className="text-gray-100 pb-16 sm:pb-20 grid gap-8 sm:gap-10 lg:grid-cols-4 max-w-6xl mx-auto">
+        <div className="text-gray-100 pb-16 sm:pb-20 grid gap-8 sm:gap-10 lg:grid-cols-2 max-w-6xl mx-auto">
           {/* Título para mobile */}
           <div className="mx-auto min-w-xl pb-4 sm:pb-5 px-2 sm:px-4 lg:px-6 inline-block md:hidden">
             <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -45,14 +45,16 @@ export const About = () => {
           </div>
 
           {/* Foto de perfil com ícones flutuantes */}
-          <div className="flex justify-center text-base gap-2 flex-col lg:col-span-2">
-            <div className="flex justify-center relative flex-col text-lg max-w-[180px] sm:max-w-[220px] md:max-w-xs lg:max-w-sm px-2 sm:px-3 md:px-4 lg:px-5 xl:px-10">
-              <div className={`flex rounded-[10rem] sm:rounded-[12rem] md:rounded-[15rem] lg:rounded-[18rem] xl:rounded-[20rem] border-2 sm:border-3 md:border-4 lg:border-6 xl:border-8 border-neutral-900 relative z-20 justify-center items-end ring-1 sm:ring-2 md:ring-3 lg:ring-4 ring-primary-orange shadow-xl shadow-orange-800 drop-shadow-2xl transition-all duration-1000 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+          <div className="flex justify-center items-center text-base gap-2 flex-col">
+            <div className="flex justify-center items-center relative flex-col text-lg w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[400px]">
+              <div className={`flex rounded-full border-4 sm:border-6 md:border-8 lg:border-10 xl:border-12 border-neutral-900 relative z-20 justify-center items-center ring-2 sm:ring-3 md:ring-4 lg:ring-5 xl:ring-6 ring-primary-orange shadow-xl shadow-orange-800 drop-shadow-2xl transition-all duration-1000 ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
                 <Image
-                  className="rounded-[10rem] hover:scale-105 transition-transform duration-300"
+                  className="rounded-full hover:scale-105 transition-transform duration-300 w-full h-auto"
                   src={ImageABout}
                   alt="Luã Rodrigues foto perfil"
                   priority
+                  width={400}
+                  height={400}
                 />
 
                 {techIcons.map((tech, index) => (

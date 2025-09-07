@@ -30,13 +30,13 @@ export const Home = () => {
   }, []);
 
   const floatingTechIcons = [
-    { Icon: SiReact, color: "bg-[#65d3f3]", border: "border-cyan-500", position: "hidden sm:block left-[5%] -top-20", delay: "0s" },
-    { Icon: SiTypescript, color: "bg-primary-blue", border: "border-secondy-blue", position: "hidden sm:block right-[5%] top-0", delay: "0.5s" },
-    { Icon: SiNextdotjs, color: "bg-gray-500", border: "border-gray-600", position: "hidden lg:block left-[10%] -bottom-16", delay: "1s" },
-    { Icon: FaJava, color: "bg-[#f89820]", border: "border-[#f89820]", position: "hidden lg:block right-[10%] -bottom-20", delay: "1.5s" },
-    { Icon: SiPhp, color: "bg-[#777bb4]", border: "border-[#777bb4]", position: "hidden xl:block left-[15%] top-1/2", delay: "2s" },
-    { Icon: SiPython, color: "bg-[#3776ab]", border: "border-[#3776ab]", position: "hidden xl:block right-[15%] top-1/3", delay: "2.5s" },
-    { Icon: SiNodedotjs, color: "bg-[#279249]", border: "border-[#279249]", position: "hidden xl:block left-[20%] -top-10", delay: "3s" }
+    { Icon: SiReact, color: "bg-[#65d3f3]", border: "border-cyan-500", position: "left-[5%] top-[10%]", delay: "0s" },
+    { Icon: SiTypescript, color: "bg-primary-blue", border: "border-secondy-blue", position: "right-[5%] top-[15%]", delay: "0.5s" },
+    { Icon: SiNextdotjs, color: "bg-gray-500", border: "border-gray-600", position: "left-[8%] bottom-[20%]", delay: "1s" },
+    { Icon: FaJava, color: "bg-[#f89820]", border: "border-[#f89820]", position: "right-[8%] bottom-[25%]", delay: "1.5s" },
+    { Icon: SiPhp, color: "bg-[#777bb4]", border: "border-[#777bb4]", position: "left-[12%] top-[50%]", delay: "2s" },
+    { Icon: SiPython, color: "bg-[#3776ab]", border: "border-[#3776ab]", position: "right-[12%] top-[40%]", delay: "2.5s" },
+    { Icon: SiNodedotjs, color: "bg-[#279249]", border: "border-[#279249]", position: "left-[15%] top-[5%]", delay: "3s" }
   ];
 
   return (
