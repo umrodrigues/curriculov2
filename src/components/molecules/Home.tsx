@@ -40,7 +40,7 @@ export const Home = () => {
   ];
 
   return (
-    <header className="w-full h-[90vh] lg:h-screen relative flex justify-center items-center overflow-hidden bg-transparent">
+    <header className="w-full h-screen min-h-[600px] relative flex justify-center items-center overflow-hidden bg-transparent">
       {/* Fundo de Galáxia */}
       <div className="absolute inset-0 galaxy-background">
         <div className="nebula"></div>
@@ -65,17 +65,17 @@ export const Home = () => {
         />
       </div>
       
-      <div className="max-w-6xl w-full pt-12 sm:pt-16 md:pt-0 px-4 sm:px-6 lg:px-8 relative z-20">
-        <div className="flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center text-center">
-            <div className={`text-lg sm:text-xl lg:text-4xl xl:text-5xl gap-1 sm:gap-2 text-white font-semibold leading-tight sm:leading-snug flex flex-col transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <p className="text-base sm:text-lg lg:text-xl xl:text-2xl mb-1 sm:mb-2 text-gray-200 drop-shadow-lg">{mesagem}, me chamo</p>
-              <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl font-bold mb-2 sm:mb-4">
+      <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="flex justify-center items-center min-h-screen py-8 sm:py-12">
+          <div className="flex flex-col justify-center items-center text-center w-full">
+            <div className={`text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl gap-1 sm:gap-2 text-white font-semibold leading-tight flex flex-col transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2 sm:mb-3 text-gray-200 drop-shadow-lg">{mesagem}, me chamo</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6">
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-pulse drop-shadow-2xl">
                   Luã Rodrigues
                 </span>
               </h1>
-              <div className="text-sm sm:text-base lg:text-lg xl:text-2xl min-h-[1.2rem] sm:min-h-[1.5rem] lg:min-h-[2rem] flex items-center justify-center">
+              <div className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl min-h-[1rem] sm:min-h-[1.2rem] md:min-h-[1.5rem] lg:min-h-[2rem] flex items-center justify-center">
                 <Typed
                   strings={[
                     "Desenvolvedor Fullstack",
@@ -93,10 +93,10 @@ export const Home = () => {
               </div>
             </div>
 
-            <div className={`flex justify-center gap-3 sm:gap-4 lg:gap-6 items-center pt-4 sm:pt-6 lg:pt-8 xl:pt-12 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className={`flex justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 items-center pt-4 sm:pt-6 md:pt-8 lg:pt-10 xl:pt-12 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               {FooterNavigation.social.map((item, index) => (
                 <div key={index} className="group">
-                  <div className="bg-gradient-to-br from-zinc-800 to-zinc-900 hover:from-zinc-700 hover:to-zinc-800 rounded-full group shadow-xl flex justify-center flex-col text-gray-100 border border-zinc-600 hover:border-primary-orange hover:shadow-primary-orange hover:shadow-lg transition-all duration-300 cursor-pointer p-2.5 sm:p-3 lg:p-4 hover:scale-110">
+                  <div className="bg-gradient-to-br from-zinc-800 to-zinc-900 hover:from-zinc-700 hover:to-zinc-800 rounded-full group shadow-xl flex justify-center flex-col text-gray-100 border border-zinc-600 hover:border-primary-orange hover:shadow-primary-orange hover:shadow-lg transition-all duration-300 cursor-pointer p-2 sm:p-2.5 md:p-3 lg:p-4 hover:scale-110">
                     <Link
                       href={item.href}
                       className="group-hover:text-primary-orange transition-colors duration-300"
@@ -105,7 +105,7 @@ export const Home = () => {
                     >
                       <span className="sr-only">{item.name}</span>
                       <item.icon
-                        className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 xl:h-8 xl:w-8"
+                        className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-8 2xl:w-8"
                         aria-hidden="true"
                       />
                     </Link>
@@ -114,9 +114,9 @@ export const Home = () => {
               ))}
             </div>
 
-            <div className={`mt-4 sm:mt-6 lg:mt-8 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="bg-black/30 backdrop-blur-md rounded-xl p-3 sm:p-4 lg:p-6 border border-cyan-500/30 max-w-xl sm:max-w-2xl mx-2 sm:mx-4 lg:mx-auto shadow-2xl shadow-cyan-500/20">
-                <p className="text-gray-200 text-xs sm:text-sm lg:text-base leading-relaxed mb-3 sm:mb-4 lg:mb-6 text-center">
+            <div className={`mt-4 sm:mt-6 md:mt-8 lg:mt-10 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="bg-black/30 backdrop-blur-md rounded-xl p-3 sm:p-4 md:p-5 lg:p-6 border border-cyan-500/30 max-w-xs sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-2 sm:mx-4 md:mx-6 lg:mx-auto shadow-2xl shadow-cyan-500/20">
+                <p className="text-gray-200 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-center">
                   <span className="text-cyan-400 font-semibold">Desenvolvedor Fullstack</span> com mais de 5 anos de experiência, 
                   especializado em <span className="text-blue-400">backend</span>, <span className="text-purple-400">automação</span> e 
                   <span className="text-pink-400"> soluções inteligentes</span>. 

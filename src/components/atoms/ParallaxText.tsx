@@ -8,8 +8,14 @@ import {
   useAnimationFrame,
   m,
 } from "framer-motion";
-import { wrap } from "@motionone/utils";
+// import { wrap } from "@motionone/utils";
 import Image from "next/image";
+
+// Função wrap simples para substituir @motionone/utils
+const wrap = (min: number, max: number, v: number) => {
+  const range = max - min;
+  return ((v - min) % range + range) % range + min;
+};
 
 interface ParallaxProps {
   baseVelocity: number;
