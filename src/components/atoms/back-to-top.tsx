@@ -59,10 +59,7 @@ const BackToTopButton = () => {
         aria-label="Voltar ao topo"
         disabled={!showButton}
       >
-        <FaArrowUp className="text-lg sm:text-xl group-hover:animate-bounce relative z-10" />
-        
-        {/* Efeito de brilho animado */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 rounded-full"></div>
+        <FaArrowUp className="text-lg sm:text-xl group-hover:animate-bounce" />
         
         {/* Efeito de pulso */}
         <div className="absolute inset-0 rounded-full bg-orange-400 opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
