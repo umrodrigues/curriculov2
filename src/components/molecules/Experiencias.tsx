@@ -16,37 +16,37 @@ import { Section } from "../atoms/Section";
 
 export const Experiencias = () => {
   return (
-    <div id="experiencias" className="z-50 py-10 px-4 lg:px-6 bg-neutral-900">
+    <div id="experiencias" className="z-50 py-8 sm:py-10 px-3 sm:px-4 lg:px-6 bg-neutral-900">
       <Section>
-        <div className="text-gray-100 py-10 max-w-5xl pb-32 sm:pb-0 border-b sm:border-b-0 border-zinc-700  flex justify-center items-center flex-col lg:col-span-2">
-          <div className="md:mx-auto w-full  md:max-w-lg lg:max-w-xl    sm:px-4 lg:px-6">
+        <div className="text-gray-100 py-8 sm:py-10 max-w-5xl pb-24 sm:pb-32 border-b sm:border-b-0 border-zinc-700 flex justify-center items-center flex-col lg:col-span-2">
+          <div className="md:mx-auto w-full md:max-w-lg lg:max-w-xl sm:px-4 lg:px-6">
             <div className="text-center w-full">
-              <h2 className="text-xl font-semibold text-degrade">
-                Sobre
+              <h2 className="text-base sm:text-lg lg:text-xl font-semibold text-degrade">
+                Experiências
               </h2>
-              <p className=" text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-                Experiencia
+              <p className="text-2xl sm:text-3xl font-bold tracking-tight lg:text-4xl xl:text-5xl">
+                Profissionais
               </p>
             </div>
 
-            <div className="flex  justify-center text-sm w-full flex-col gap-6">
+            <div className="flex justify-center text-xs sm:text-sm w-full flex-col gap-4 sm:gap-6">
               <p
-                className="text-center leading-relaxed mb-5 px-2"
+                className="text-center leading-relaxed mb-4 sm:mb-5 px-2"
               >
-                Um pouco sobre as minhas experiencias de trabalho.
+                Um pouco sobre as minhas experiências de trabalho.
               </p>
               
              
               <div
-                className="flex px-4 sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
+                className="flex px-2 sm:px-4 w-full hover:scale-105 transition-all duration-300 justify-center flex-col"
               >
-                <div className="shadow-2xl md:flex-col rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
-                  <div className=" md:px-4   text-gray-100 bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-3  justify-center items-center ">
-                    <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
-                      <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-md flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">L</span>
+                <div className="shadow-2xl md:flex-col rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400">
+                  <div className="md:px-4 text-gray-100 bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4 rounded-bl-none rounded-tr-xl py-2 sm:py-3 justify-center items-center">
+                    <div className="flex justify-center flex-col md:flex-row items-center text-sm sm:text-base">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-md flex items-center justify-center">
+                        <span className="text-white font-bold text-xs sm:text-sm">L</span>
                       </div>
-                      <h2 className="text-center md:text-clip md:ml-2">
+                      <h2 className="text-center md:text-clip md:ml-2 text-sm sm:text-base">
                         {" "}
                         Lydia Sistemas Inteligentes
                       </h2>

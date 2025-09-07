@@ -30,30 +30,30 @@ export const SkillsSection = () => {
 
   return (
     <div className="w-full flex flex-col overflow-hidden">
-      <div className="pb-10 w-full lg:pb-32 bg-neutral-900 flex gap-10 flex-col">
-        <div className="text-center w-full">
-          <h2 className="text-lg font-semibold text-degrade">Sobre</h2>
-          <p className="text-2xl font-bold text-white tracking-tight sm:text-4xl lg:text-5xl">
-            Skills & Tecnologias
+      <div className="pb-8 sm:pb-10 w-full lg:pb-32 bg-neutral-900 flex gap-6 sm:gap-10 flex-col">
+        <div className="text-center w-full px-4">
+          <h2 className="text-base sm:text-lg font-semibold text-degrade">Skills</h2>
+          <p className="text-xl sm:text-2xl font-bold text-white tracking-tight lg:text-4xl xl:text-5xl">
+            Tecnologias
           </p>
-          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">
             Especialista em desenvolvimento fullstack com foco em backend, automação e soluções inteligentes
           </p>
         </div>
       </div>
 
-      <div className="bg-neutral-900 py-16 px-4 lg:px-6">
+      <div className="bg-neutral-900 py-12 sm:py-16 px-3 sm:px-4 lg:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <div 
                 key={categoryIndex}
-                className="bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-xl p-6 border border-zinc-700 hover:border-zinc-600 transition-all duration-300 hover:scale-105"
+                className="bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-xl p-4 sm:p-6 border border-zinc-700 hover:border-zinc-600 transition-all duration-300 hover:scale-105"
               >
-                <div className={`inline-block bg-gradient-to-r ${category.color} text-white px-4 py-2 rounded-full text-sm font-semibold mb-4`}>
+                <div className={`inline-block bg-gradient-to-r ${category.color} text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4`}>
                   {category.title}
                 </div>
-                <div className="space-y-3">
+                <div className="space-y-2 sm:space-y-3">
                   {skillsNavigation.slice(category.start, category.end).map((item, index) => {
                     const globalIndex = category.start + index;
                     const isVisible = visibleSkills.includes(globalIndex);
@@ -61,7 +61,7 @@ export const SkillsSection = () => {
                     return (
                       <div
                         key={globalIndex}
-                        className={`flex items-center space-x-3 transition-all duration-500 ${
+                        className={`flex items-center space-x-2 sm:space-x-3 transition-all duration-500 ${
                           isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
                         }`}
                         style={{ transitionDelay: `${index * 100}ms` }}
@@ -69,11 +69,11 @@ export const SkillsSection = () => {
                         {item.icon && (
                           <div className="flex-shrink-0">
                             {React.createElement(item.icon, {
-                              className: "text-2xl text-white",
+                              className: "text-lg sm:text-xl lg:text-2xl text-white",
                             })}
                           </div>
                         )}
-                        <span className="text-gray-200 text-sm font-medium">
+                        <span className="text-gray-200 text-xs sm:text-sm font-medium">
                           {item.label}
                         </span>
                       </div>

@@ -103,26 +103,26 @@ export const ProjetoSection = () => {
     }
   }
   return (
-    <div id="Projetos" className=" bg-neutral-900">
+    <div id="Projetos" className="bg-neutral-900">
       <Section>
-        <div className="text-white flex flex-col justify-center items-center max-w-7xl mx-auto px-5 lg:px-8 ">
-          <div className="mx-auto max-w-7xl py-8 pb-10 px-4 text-center">
-            <h3 className="mt-1 text-[2.75rem] text-degrade pb-4 font-bold tracking-tight sm:text-4xl lg:text-5xl">
+        <div className="text-white flex flex-col justify-center items-center max-w-7xl mx-auto px-3 sm:px-5 lg:px-8">
+          <div className="mx-auto max-w-7xl py-6 sm:py-8 pb-8 sm:pb-10 px-3 sm:px-4 text-center">
+            <h3 className="mt-1 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-degrade pb-3 sm:pb-4 font-bold tracking-tight">
               Projetos
             </h3>
-            <p className="text-zinc-100 max-w-md">
+            <p className="text-zinc-100 max-w-md text-sm sm:text-base">
               Abaixo, você pode conferir alguns dos meus projetos, que incluem
               tanto projetos de estudo quanto projetos de trabalho
             </p>
           </div>
-          <div className="flex w-full justify-center items-center flex-col border-b border-zinc-700 pb-20">
-            <div className="flex w-full justify-center sm:justify-around flex-wrap gap-10 sm:gap-0 ">
+          <div className="flex w-full justify-center items-center flex-col border-b border-zinc-700 pb-16 sm:pb-20">
+            <div className="flex w-full justify-center sm:justify-around flex-wrap gap-6 sm:gap-8 lg:gap-10">
               {ArrayPortifolio1a3.map((item, index) => (
                 <div
                   key={index}
-                  className="p-3 flex-initial cursor-default w-full md:w-1/2 lg:w-1/3 shadow-xl shadow-zinc-600"
+                  className="p-2 sm:p-3 flex-initial cursor-default w-full sm:w-1/2 lg:w-1/3 shadow-xl shadow-zinc-600"
                 >
-                  <div className="flex h-full flex-col justify-between items-center md:max-w-sm xl:max-w-xs p-1 rounded-lg shadow-lg vidro bg-neutral-700 hover:scale-105 transition-all duration-300">
+                  <div className="flex h-full flex-col justify-between items-center md:max-w-sm xl:max-w-xs p-1 sm:p-2 rounded-lg shadow-lg vidro bg-neutral-700 hover:scale-105 transition-all duration-300">
                     <div className="flex flex-col justify-center items-center ">
                       <Image
                         src={item.img}
