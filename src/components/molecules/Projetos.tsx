@@ -7,7 +7,7 @@ import { BsBehance, BsEyeFill, BsGithub } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import { FaCss3, FaHtml5, FaPhp, FaJava, FaRobot, FaSpider } from "react-icons/fa";
-import { SiJavascript, SiSass, SiReact, SiNextdotjs, SiLaravel, SiN8N, SiPython, SiMysql } from "react-icons/si";
+import { SiJavascript, SiSass, SiReact, SiNextdotjs, SiLaravel, SiPython, SiMysql } from "react-icons/si";
 import { useState, useEffect } from "react";
 
 const ArrayPortifolio1a3 = [
@@ -96,6 +96,8 @@ export const ProjetoSection = () => {
         return <SiReact className="inline bg-[#61dafb] p-1 rounded-full" />;
       case "Next":
         return <SiNextdotjs className="inline bg-[#000000] p-1 rounded-full" />;
+      case "n8n":
+        return <FaRobot className="inline bg-[#ff6b35] p-1 rounded-full" />;
       default:
         return <BsEyeFill />;
     }

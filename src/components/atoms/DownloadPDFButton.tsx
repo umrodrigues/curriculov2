@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Button } from './Button';
 import { downloadPDF, PDFData } from '../../services/pdfGenerator';
-import { BsDownload, BsFileEarmarkPdf } from 'react-icons/bs';
+import { BsFileEarmarkPdf } from 'react-icons/bs';
+import { useLoadingStore } from '../../stores/loadingStore';
 
 interface DownloadPDFButtonProps {
   className?: string;
@@ -9,6 +9,7 @@ interface DownloadPDFButtonProps {
 
 export const DownloadPDFButton = ({ className = '' }: DownloadPDFButtonProps) => {
   const [isGenerating, setIsGenerating] = useState(false);
+  const { setLoading } = useLoadingStore();
 
   const pdfData: PDFData = {
     name: 'Luã Silva Rodrigues',
@@ -134,6 +135,7 @@ export const DownloadPDFButton = ({ className = '' }: DownloadPDFButtonProps) =>
 
   const handleDownload = async () => {
     setIsGenerating(true);
+    setLoading(true, 'Gerando PDF do currículo...');
     try {
       await downloadPDF(pdfData, 'curriculo-lua-rodrigues.pdf');
     } catch (error) {
@@ -141,27 +143,39 @@ export const DownloadPDFButton = ({ className = '' }: DownloadPDFButtonProps) =>
       alert('Erro ao gerar o PDF. Tente novamente.');
     } finally {
       setIsGenerating(false);
+      setLoading(false);
     }
   };
 
   return (
-    <Button
+    <button
       onClick={handleDownload}
       disabled={isGenerating}
-      className={`flex items-center gap-2 ${className}`}
-      variant="primary"
+      className={`
+        inline-flex items-center justify-center gap-3
+        px-6 py-3
+        bg-zinc-800 hover:bg-zinc-700
+        border border-zinc-600 hover:border-zinc-500
+        text-white font-medium
+        rounded-lg
+        transition-all duration-200
+        hover:shadow-lg
+        focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900
+        disabled:opacity-50 disabled:cursor-not-allowed
+        ${className}
+      `}
     >
       {isGenerating ? (
         <>
-          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
-          Gerando PDF...
+          <div className="animate-spin rounded-full h-4 w-4 border-2 border-zinc-400 border-t-white"></div>
+          <span>Gerando PDF...</span>
         </>
       ) : (
         <>
           <BsFileEarmarkPdf className="text-lg" />
-          Baixar Currículo PDF
+          <span>Baixar Currículo PDF</span>
         </>
       )}
-    </Button>
+    </button>
   );
 };

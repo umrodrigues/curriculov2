@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaJava, FaDocker, FaSass, FaDev,FaLaravel,FaNode, FaVuejs, FaCodeBranch,FaLinux, FaNetworkWired, FaMailBulk, FaJenkins, FaRobot, FaSpider } from "react-icons/fa";
-import { SiTypescript, SiMysql, SiSpring, SiPython, SiCsharp, SiPhp, SiRuby, SiN8N } from "react-icons/si";
+import { SiTypescript, SiMysql, SiSpring, SiPython, SiCsharp, SiPhp, SiRuby } from "react-icons/si";
 
 export const skillsNavigation = [
     // Backend Technologies - Destaque principal
@@ -59,7 +59,7 @@ export const skillsNavigation = [
     // Automação e IA - Novas tecnologias
     {
       label: "Automação com n8n",
-      icon: SiN8N,
+      icon: FaRobot,
     },
     {
       label: "Web Scraping",

@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Poppins } from "next/font/google";
 import { AnimatePresence } from "framer-motion";
 import { LazyMotion, domAnimation } from "framer-motion";
+import { LoadingOverlay } from "../components/atoms/LoadingOverlay";
+import { useLoadingStore } from "../stores/loadingStore";
 
 const poppins = Poppins({
   weight: ["200", "400", "500", "600", "700"],
@@ -17,6 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [time, setTime] = useState("");
   const [hora, setHora] = useState(0);
   const [MsDeboasVindas, setMsDeboasVindas] = useState("");
+  const [isPageLoading, setIsPageLoading] = useState(true);
+  const { setLoading } = useLoadingStore();
 
   useEffect(() => {
     // Zero Vazio
@@ -54,7 +58,22 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
 
     handleGetTime();
-  }, []);
+    
+    // Simular carregamento inicial da página
+    const timer = setTimeout(() => {
+      setIsPageLoading(false);
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, [setLoading]);
+
+  // Mostrar loading inicial
+  useEffect(() => {
+    if (isPageLoading) {
+      setLoading(true, 'Carregando portfólio...');
+    }
+  }, [isPageLoading, setLoading]);
 
   return (
     <AnimatePresence mode="wait" initial={false}>
@@ -62,6 +81,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <AppProvider>
           <main className={`${poppins.variable} font-sans`}>
             <Component {...pageProps} />
+            <LoadingOverlay />
           </main>
         </AppProvider>
       </LazyMotion>

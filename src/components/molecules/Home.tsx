@@ -4,7 +4,8 @@ const Typed = dynamic(() => import("react-typed"), { ssr: false });
 const UseAnimations = dynamic(() => import("react-useanimations"), { ssr: false });
 import arrowDown from "react-useanimations/lib/arrowDown";
 
-import { SiNextdotjs, SiReact, SiTypescript, SiJava, SiPhp, SiPython, SiNodedotjs } from "react-icons/si";
+import { SiNextdotjs, SiReact, SiTypescript, SiPhp, SiPython, SiNodedotjs } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import { useAppContext } from "../../services/context";
 import { FooterNavigation } from "../organisms/mocks/footer.mock";
 import { DownloadPDFButton } from "../atoms/DownloadPDFButton";
@@ -32,7 +33,7 @@ export const Home = () => {
     { Icon: SiReact, color: "bg-[#65d3f3]", border: "border-cyan-500", position: "left-[5%] -top-20", delay: "0s" },
     { Icon: SiTypescript, color: "bg-primary-blue", border: "border-secondy-blue", position: "right-[5%] top-0", delay: "0.5s" },
     { Icon: SiNextdotjs, color: "bg-gray-500", border: "border-gray-600", position: "left-[10%] -bottom-32 lg:-bottom-16", delay: "1s" },
-    { Icon: SiJava, color: "bg-[#f89820]", border: "border-[#f89820]", position: "right-[10%] -bottom-20", delay: "1.5s" },
+    { Icon: FaJava, color: "bg-[#f89820]", border: "border-[#f89820]", position: "right-[10%] -bottom-20", delay: "1.5s" },
     { Icon: SiPhp, color: "bg-[#777bb4]", border: "border-[#777bb4]", position: "left-[15%] top-1/2", delay: "2s" },
     { Icon: SiPython, color: "bg-[#3776ab]", border: "border-[#3776ab]", position: "right-[15%] top-1/3", delay: "2.5s" },
     { Icon: SiNodedotjs, color: "bg-[#279249]", border: "border-[#279249]", position: "left-[20%] -top-10", delay: "3s" }
@@ -99,11 +100,11 @@ export const Home = () => {
             </div>
 
             <div className={`mt-8 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 rounded-xl p-6 border border-zinc-700 max-w-2xl">
-                <p className="text-gray-300 text-sm lg:text-base leading-relaxed mb-4">
-                  <span className="text-primary-orange font-semibold">Desenvolvedor Fullstack</span> com mais de 5 anos de experiência, 
-                  especializado em <span className="text-blue-400">backend</span>, <span className="text-purple-400">automação</span> e 
-                  <span className="text-green-400"> soluções inteligentes</span>. 
+              <div className="bg-zinc-800/50 backdrop-blur-sm rounded-xl p-6 border border-zinc-700/50 max-w-2xl">
+                <p className="text-gray-300 text-sm lg:text-base leading-relaxed mb-6 text-center">
+                  <span className="text-white font-semibold">Desenvolvedor Fullstack</span> com mais de 5 anos de experiência, 
+                  especializado em <span className="text-zinc-200">backend</span>, <span className="text-zinc-200">automação</span> e 
+                  <span className="text-zinc-200"> soluções inteligentes</span>. 
                   Apaixonado por criar sistemas robustos e eficientes.
                 </p>
                 <div className="flex justify-center">

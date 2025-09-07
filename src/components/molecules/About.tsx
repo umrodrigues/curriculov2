@@ -3,7 +3,8 @@ import { BsFileEarmarkPdf } from "react-icons/bs";
 import ImageABout from "../../assets/perfil.webp";
 import Link from "next/link";
 import { Section } from "../atoms/Section";
-import { SiCss3, SiNodedotjs, SiJavascript, SiJava, SiPhp, SiPython } from "react-icons/si";
+import { SiCss3, SiNodedotjs, SiJavascript, SiPhp, SiPython } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 export const About = () => {
@@ -24,7 +25,7 @@ export const About = () => {
     { Icon: SiJavascript, color: "bg-[#EAD41C]", position: "left-0 top-0", delay: "0s" },
     { Icon: SiCss3, color: "bg-primary-blue", position: "right-0 bottom-20", delay: "0.5s" },
     { Icon: SiNodedotjs, color: "bg-[#279249]", position: "left-0 bottom-10", delay: "1s" },
-    { Icon: SiJava, color: "bg-[#f89820]", position: "right-0 top-10", delay: "1.5s" },
+    { Icon: FaJava, color: "bg-[#f89820]", position: "right-0 top-10", delay: "1.5s" },
     { Icon: SiPhp, color: "bg-[#777bb4]", position: "left-1/2 top-0", delay: "2s" },
     { Icon: SiPython, color: "bg-[#3776ab]", position: "right-1/3 bottom-0", delay: "2.5s" }
   ];

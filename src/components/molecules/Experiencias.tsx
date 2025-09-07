@@ -70,14 +70,14 @@ export const Experiencias = () => {
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        01/03/2024
+                        03/11/2024
                       </span>
 
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
                         <h3 className="font-semibold text-primary-orange">
-                          31/12/2024
+                          05/09/2025
                         </h3>
                       </span>
                     </div>
