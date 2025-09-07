@@ -28,9 +28,9 @@ export const HomePageTemplate = () => {
         <Experiencias />
         <ProjetoSection />
         <ContactSection />
-        <BackToTopButton />
       </main>
       <Footer />
+      <BackToTopButton />
     </>
   );
 };

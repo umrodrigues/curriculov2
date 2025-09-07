@@ -19,32 +19,31 @@ export const SkillsSection = () => {
   }, []);
 
   const skillCategories = [
-    { title: "Backend", start: 0, end: 5, color: "from-blue-500 to-cyan-500" },
-    { title: "Frontend", start: 5, end: 9, color: "from-purple-500 to-pink-500" },
-    { title: "DevOps & DB", start: 9, end: 12, color: "from-green-500 to-emerald-500" },
-    { title: "Automação & IA", start: 12, end: 15, color: "from-orange-500 to-red-500" },
-    { title: "Qualidade", start: 15, end: 18, color: "from-indigo-500 to-blue-500" },
-    { title: "Metodologias", start: 18, end: 21, color: "from-teal-500 to-green-500" },
-    { title: "Infraestrutura", start: 21, end: 28, color: "from-gray-500 to-slate-500" }
+    { title: "Backend", start: 0, end: 4, color: "from-blue-500 to-cyan-500" },
+    { title: "Frontend", start: 4, end: 8, color: "from-purple-500 to-pink-500" },
+    { title: "DevOps & DB", start: 8, end: 12, color: "from-green-500 to-emerald-500" },
+    { title: "Automação & IA", start: 12, end: 16, color: "from-orange-500 to-red-500" },
+    { title: "Qualidade & Testes", start: 16, end: 20, color: "from-indigo-500 to-blue-500" },
+    { title: "Metodologias & Infra", start: 20, end: 24, color: "from-teal-500 to-green-500" }
   ];
 
   return (
     <div className="w-full flex flex-col overflow-hidden">
-      <div className="pb-8 sm:pb-10 w-full lg:pb-32 bg-neutral-900 flex gap-6 sm:gap-10 flex-col">
+      <div className="pb-6 sm:pb-8 w-full lg:pb-16 bg-neutral-900 flex gap-4 sm:gap-6 flex-col">
         <div className="text-center w-full px-4">
           <h2 className="text-base sm:text-lg font-semibold text-degrade">Skills</h2>
           <p className="text-xl sm:text-2xl font-bold text-white tracking-tight lg:text-4xl xl:text-5xl">
             Tecnologias
           </p>
-          <p className="text-gray-300 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="text-gray-300 mt-2 sm:mt-3 max-w-2xl mx-auto text-sm sm:text-base">
             Especialista em desenvolvimento fullstack com foco em backend, automação e soluções inteligentes
           </p>
         </div>
       </div>
 
-      <div className="bg-neutral-900 py-12 sm:py-16 px-3 sm:px-4 lg:px-6">
+      <div className="bg-neutral-900 py-8 sm:py-12 px-3 sm:px-4 lg:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <div 
                 key={categoryIndex}

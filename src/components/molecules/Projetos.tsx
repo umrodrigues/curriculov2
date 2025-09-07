@@ -106,8 +106,8 @@ export const ProjetoSection = () => {
     <div id="Projetos" className="bg-neutral-900">
       <Section>
         <div className="text-white flex flex-col justify-center items-center max-w-7xl mx-auto px-3 sm:px-5 lg:px-8">
-          <div className="mx-auto max-w-7xl py-6 sm:py-8 pb-8 sm:pb-10 px-3 sm:px-4 text-center">
-            <h3 className="mt-1 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-degrade pb-3 sm:pb-4 font-bold tracking-tight">
+          <div className="mx-auto max-w-7xl py-4 sm:py-6 pb-6 sm:pb-8 px-3 sm:px-4 text-center">
+            <h3 className="mt-1 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-degrade pb-2 sm:pb-3 font-bold tracking-tight">
               Projetos
             </h3>
             <p className="text-zinc-100 max-w-md text-sm sm:text-base">
@@ -115,45 +115,45 @@ export const ProjetoSection = () => {
               tanto projetos de estudo quanto projetos de trabalho
             </p>
           </div>
-          <div className="flex w-full justify-center items-center flex-col border-b border-zinc-700 pb-16 sm:pb-20">
-            <div className="flex w-full justify-center sm:justify-around flex-wrap gap-6 sm:gap-8 lg:gap-10">
+          <div className="flex w-full justify-center items-center flex-col border-b border-zinc-700 pb-12 sm:pb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 w-full max-w-6xl">
               {ArrayPortifolio1a3.map((item, index) => (
                 <div
                   key={index}
-                  className="p-2 sm:p-3 flex-initial cursor-default w-full sm:w-1/2 lg:w-1/3 shadow-xl shadow-zinc-600"
+                  className="flex-initial cursor-default shadow-xl shadow-zinc-600"
                 >
-                  <div className="flex h-full flex-col justify-between items-center md:max-w-sm xl:max-w-xs p-1 sm:p-2 rounded-lg shadow-lg vidro bg-neutral-700 hover:scale-105 transition-all duration-300">
-                    <div className="flex flex-col justify-center items-center ">
+                  <div className="flex h-full flex-col justify-between items-center p-3 sm:p-4 rounded-lg shadow-lg vidro bg-neutral-700 hover:scale-105 transition-all duration-300">
+                    <div className="flex flex-col justify-center items-center w-full">
                       <Image
                         src={item.img}
                         alt={`Imagen ${item.title}`}
-                        className="rounded-lg"
+                        className="rounded-lg w-full h-48 sm:h-52 object-cover"
                       />
                     </div>
-                    <h2 className="mt-2 font-semibold text-gray-200">
+                    <h2 className="mt-3 text-sm sm:text-base font-semibold text-gray-200 text-center">
                       {item.title}
                     </h2>
-                    <div className="flex my-2 justify-center space-x-4 items-center w-full px-5 text-3xl">
+                    <div className="flex my-2 justify-center space-x-3 items-center w-full px-3 text-2xl sm:text-3xl">
                       <div className="hover:scale-125 transition-all duration-300">
                         {handleIconProjeto(item.projectSkill2)}
                       </div>
-                      <div className="text-[2.5rem] hover:scale-110 transition-all duration-300">
+                      <div className="text-2xl sm:text-3xl hover:scale-110 transition-all duration-300">
                         {handleIconProjeto(item.projectSkill1)}
                       </div>
                       <div className="hover:scale-125 transition-all duration-300">
                         {handleIconProjeto(item.projectSkill3)}
                       </div>
                     </div>
-                    <p className="text-neutral-100 text-sm text-center py-2 px-4">
+                    <p className="text-neutral-100 text-xs sm:text-sm text-center py-2 px-2 leading-relaxed">
                       {item.description}
                     </p>
                     <div className="flex justify-around pt-3 mt-3 border-t border-zinc-800 pb-4 items-center w-full">
-                      <Link href={item.linkLocal} className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-150 hover:text-gray-100 text-primary-orange transition-all duration-300" target="_blank">
-                        <BsEyeFill size={30} />
+                      <Link href={item.linkLocal} className="text-xl sm:text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-150 hover:text-gray-100 text-primary-orange transition-all duration-300" target="_blank">
+                        <BsEyeFill size={20} />
                       </Link>
                       {item.git && (
-                        <Link href={item.git} className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110 text-gray-100 hover:text-primary-orange transition-all duration-200" target="_blank">
-                          <BsGithub size={25} />
+                        <Link href={item.git} className="text-xl sm:text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110 text-gray-100 hover:text-primary-orange transition-all duration-200" target="_blank">
+                          <BsGithub size={20} />
                         </Link>
                       )}
                     </div>

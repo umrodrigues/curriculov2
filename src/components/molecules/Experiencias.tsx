@@ -16,9 +16,9 @@ import { Section } from "../atoms/Section";
 
 export const Experiencias = () => {
   return (
-    <div id="experiencias" className="z-50 py-8 sm:py-10 px-3 sm:px-4 lg:px-6 bg-neutral-900">
+    <div id="experiencias" className="z-50 py-6 sm:py-8 px-3 sm:px-4 lg:px-6 bg-neutral-900">
       <Section>
-        <div className="text-gray-100 py-8 sm:py-10 max-w-5xl pb-24 sm:pb-32 border-b sm:border-b-0 border-zinc-700 flex justify-center items-center flex-col lg:col-span-2">
+        <div className="text-gray-100 py-6 sm:py-8 max-w-5xl pb-16 sm:pb-20 border-b sm:border-b-0 border-zinc-700 flex justify-center items-center flex-col lg:col-span-2">
           <div className="md:mx-auto w-full md:max-w-lg lg:max-w-xl sm:px-4 lg:px-6">
             <div className="text-center w-full">
               <h2 className="text-base sm:text-lg lg:text-xl font-semibold text-degrade">
@@ -29,7 +29,7 @@ export const Experiencias = () => {
               </p>
             </div>
 
-            <div className="flex justify-center text-xs sm:text-sm w-full flex-col gap-4 sm:gap-6">
+            <div className="flex justify-center text-sm sm:text-base w-full flex-col gap-3 sm:gap-4">
               <p
                 className="text-center leading-relaxed mb-4 sm:mb-5 px-2"
               >
