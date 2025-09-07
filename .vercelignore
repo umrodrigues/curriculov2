@@ -92,6 +92,7 @@ Thumbs.db
 # Git
 .git/
 .gitignore
+.git/**
 
 # Vercel
 .vercel
