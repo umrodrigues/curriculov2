@@ -43,6 +43,72 @@ export const Experiencias = () => {
                 <div className="shadow-2xl md:flex-col rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
                   <div className=" md:px-4   text-gray-100 bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-3  justify-center items-center ">
                     <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
+                      <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-md flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">L</span>
+                      </div>
+                      <h2 className="text-center md:text-clip md:ml-2">
+                        {" "}
+                        Lydia Sistemas Inteligentes
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="text-center flex items-center flex-col  bg-zinc-500 rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
+                    <p>
+                    Desenvolvedor Fullstack | Especialista em Automação e IA
+                    <br />
+                    Desenvolvimento de soluções inteligentes com PHP, Laravel e MySQL.
+                    <br />
+                    Implementação de web scraping para coleta e processamento de dados.
+                    <br />
+                    Criação de automações avançadas utilizando IA e plataforma n8n.
+                    <br />
+                    Desenvolvimento de APIs robustas e integração de sistemas.
+                    <br />
+                    Otimização de processos através de automação inteligente.
+                      </p>
+                    <div className="flex flex-wrap w-full py-4 md:px-10 justify-around items-center">
+                      <span className="flex justify-center items-center">
+                        <h3 className="font-semibold">De:</h3>
+                        <BsCalendar className="inline mx-1" />
+                        01/03/2024
+                      </span>
+
+                      <span className="flex justify-center items-center">
+                        <h3 className="font-semibold">Ate:</h3>
+                        <BsCalendar className="inline mx-1" />
+                        <h3 className="font-semibold text-primary-orange">
+                          31/12/2024
+                        </h3>
+                      </span>
+                    </div>
+                    <div className="py-2.5">
+                      <Link href="#"
+                          target="_blank"
+                          className="bg-gradient-to-r from-blue-600 to-purple-600 px-16 rounded-md  md:w-auto md:px-10 py-1 flex justify-between items-center hover:scale-105 transition-all duration-300"
+                        >
+                          <span className="text-gray-100 text-base font-bold">
+                            Saiba mais
+                          </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="flex justify-center mx-2 h-full "
+              >
+                <div
+                  className="w-[2px] h-32 bg-zinc-300 bg-opacity-90 "
+                ></div>
+              </div>
+
+              <div
+                className="flex px-4 sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
+              >
+                <div className="shadow-2xl md:flex-col rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
+                  <div className=" md:px-4   text-gray-100 bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-3  justify-center items-center ">
+                    <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
                       <Image
                         className="rounded-md"
                         src={velocelogo}
@@ -69,14 +135,14 @@ export const Experiencias = () => {
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        20/12/2024
+                        20/12/2023
                       </span>
 
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
                         <h3 className="font-semibold text-primary-orange">
-                          Atualmente
+                          28/02/2024
                         </h3>
                       </span>
                     </div>
@@ -146,14 +212,14 @@ export const Experiencias = () => {
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        31/12/2022
+                        01/01/2023
                       </span>
 
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
                         <h3 className="font-semibold text-primary-orange">
-                          12/09/2024
+                          31/10/2024
                         </h3>
                       </span>
                     </div>
@@ -217,14 +283,14 @@ export const Experiencias = () => {
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        20/07/2021
+                        01/08/2022
                       </span>
 
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
                         <h3 className="font-semibold text-primary-orange">
-                          31/12/2022
+                          28/02/2023
                         </h3>
                       </span>
                     </div>
@@ -297,13 +363,13 @@ export const Experiencias = () => {
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">De:</h3>
                         <BsCalendar className="inline mx-1" />
-                        05/06/2020
+                        01/05/2021
                       </span>
 
                       <span className="flex justify-center items-center">
                         <h3 className="font-semibold">Ate:</h3>
                         <BsCalendar className="inline mx-1" />
-                        15/07/2021
+                        30/09/2022
                       </span>
                     </div>
                     <div className="py-2.5">

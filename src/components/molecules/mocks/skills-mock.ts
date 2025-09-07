@@ -1,172 +1,129 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaJava, FaDocker, FaSass, FaDev,FaLaravel,FaNode, FaVuejs, FaCodeBranch,FaLinux, FaNetworkWired, FaMailBulk, FaJenkins } from "react-icons/fa";
-import { SiTypescript, SiMysql, SiSpring, SiPython, SiCsharp, SiPhp, SiRuby } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDatabase, FaJava, FaDocker, FaSass, FaDev,FaLaravel,FaNode, FaVuejs, FaCodeBranch,FaLinux, FaNetworkWired, FaMailBulk, FaJenkins, FaRobot, FaSpider } from "react-icons/fa";
+import { SiTypescript, SiMysql, SiSpring, SiPython, SiCsharp, SiPhp, SiRuby, SiN8N } from "react-icons/si";
 
 export const skillsNavigation = [
+    // Backend Technologies - Destaque principal
     {
-      label: "Hooks customizados",
-      icon: FaCodeBranch,
+      label: "Java & Spring Boot",
+      icon: FaJava,
     },
     {
-      label: "Testes unitários com Jest",
-      icon: FaCodeBranch,
-  
-    },
-    {
-      label: "Documentação com storybook",
-      icon: FaCodeBranch,
-      
-    },
-    {
-      label: "Layout Responsivo",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Sistemas Operacionais GNU/Linux",
-      icon: FaLinux,
-  },
-  
-    {
-      label: "Cake PHP",
-      icon: FaLinux,
-  },
-    {
-      label: "Metodologias ágeis, Scrum, Kambam",
-      icon: FaLinux,
-  },
-    {
-      label: "Conceitos de rede de computadores (TCP/IP, Switch, Roteador, Firewall, VPN)",
-      icon: FaLinux,
-  },
-    {
-      label: "Laravel",
-      icon: FaLaravel,
-
-    },
-    {
-      label: "Node.js",
+      label: "Node.js & Express",
       icon: FaNode,
-
+    },
+    {
+      label: "PHP & Laravel",
+      icon: FaLaravel,
+    },
+    {
+      label: "Python",
+      icon: SiPython,
+    },
+    {
+      label: "C# & .NET",
+      icon: SiCsharp,
+    },
+    
+    // Frontend Technologies
+    {
+      label: "React & TypeScript",
+      icon: FaReact,
     },
     {
       label: "Vue.js",
       icon: FaVuejs,
-
     },
     {
-      label: "Configuração de placas e rotas de rede",
-      icon: FaNetworkWired,
-  },
-    {
-      label: "Servidor SSH",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Servidor Web ( Apache e Nginx)",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Arquiteturas de Hardware de computadores ( SCSI, RAID, HBA )",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Servidor de e-mail ( Postfix / Qmail ou Sendmail )",
-      icon: FaMailBulk,
-  },
-    {
-      label: "Instalação de pacotes ( .rpm / .deb )",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Shell Script",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Editores de texto ( vi / vim / emacs / mcedit )",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Agendamento de tarefas ( cron / at )",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Kubernets",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Jenkins",
-      icon: FaJenkins,
-  },
-    {
-      label: "Inglês",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Postmann e Insomnia",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "RabbitMq",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Graphana",
-      icon: FaCodeBranch,
-  },
-    {
-      label: "Swagger",
-      icon: FaCodeBranch,
-  },
-  
-    {
-      label: "HTML5",
-      icon: FaHtml5,
-  },
-    {
-      label: "CSS3",
-      icon: FaCss3Alt,
-  },
-    {
-      label: "JavaScript",
+      label: "JavaScript & ES6+",
       icon: FaJs,
-  },
+    },
     {
-      label: "TypeScript",
-      icon: SiTypescript,
-  },
+      label: "HTML5 & CSS3",
+      icon: FaHtml5,
+    },
+    
+    // Databases & DevOps
     {
-      label: "React",
-      icon: FaReact,
-  },
-    {
-      label: "MySQL",
+      label: "MySQL & PostgreSQL",
       icon: SiMysql,
-  },
+    },
     {
-      label: "Java",
-      icon: FaJava,
-  },
-    {
-      label: "Spring",
-      icon: SiSpring,
-  },
-    {
-      label: "Docker",
+      label: "Docker & Kubernetes",
       icon: FaDocker,
-  },
+    },
     {
-      label: "Sass",
+      label: "Jenkins CI/CD",
+      icon: FaJenkins,
+    },
+    
+    // Automação e IA - Novas tecnologias
+    {
+      label: "Automação com n8n",
+      icon: SiN8N,
+    },
+    {
+      label: "Web Scraping",
+      icon: FaSpider,
+    },
+    {
+      label: "IA para Automações",
+      icon: FaRobot,
+    },
+    
+    // Qualidade e Testes
+    {
+      label: "Testes unitários com Jest",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "Documentação com Storybook",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "API Testing (Postman/Swagger)",
+      icon: FaCodeBranch,
+    },
+    
+    // Metodologias e Soft Skills
+    {
+      label: "Metodologias Ágeis (Scrum/Kanban)",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "Hooks customizados React",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "Layout Responsivo",
+      icon: FaCodeBranch,
+    },
+    // Infraestrutura e Sistemas
+    {
+      label: "Sistemas GNU/Linux",
+      icon: FaLinux,
+    },
+    {
+      label: "Shell Script & Bash",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "Servidores Web (Apache/Nginx)",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "RabbitMQ & Message Queues",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "Grafana & Monitoring",
+      icon: FaCodeBranch,
+    },
+    {
+      label: "Sass & CSS Preprocessors",
       icon: FaSass,
-  },
+    },
     {
-      label: "Python",
-      icon: SiPython,
-  },
-    {
-      label: "C#",
-      icon: SiCsharp,
-  },
-    {
-      label: "PHP",
-      icon: SiPhp,
-  },
+      label: "Inglês Técnico",
+      icon: FaCodeBranch,
+    },
   ];

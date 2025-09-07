@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import AppContext from "../services/context";
+import { AppProvider } from "../services/context";
 import { useEffect, useState } from "react";
 import { Poppins } from "next/font/google";
 import { AnimatePresence } from "framer-motion";
@@ -59,11 +59,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AnimatePresence mode="wait" initial={false}>
       <LazyMotion features={domAnimation}>
-        <AppContext.Provider value={{ MsDeboasVindas, time, hora }}>
+        <AppProvider>
           <main className={`${poppins.variable} font-sans`}>
             <Component {...pageProps} />
           </main>
-        </AppContext.Provider>
+        </AppProvider>
       </LazyMotion>
     </AnimatePresence>
   );
